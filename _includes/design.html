@@ -1,3 +1,4 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script><script src="http://parsleyjs.org/dist/parsley.min.js"></script>
 <meta content="width=device-width,initial-scale=1" name="viewport" />
 <section class="container" id="WebsiteDataCollection"><!-- Instructions -->
 <div class="row">
@@ -67,7 +68,7 @@
 	<li>The tweet interpretation&nbsp;<strong>should not be ambiguous solely based on context</strong>.</li>
 </ol>
 
-<p><strong>Note</strong>: Fields marked <strong><span style="color:ff0000">*</span></strong> are mandatory.</p>
+<p><strong>Note</strong>: Fields marked <span style="color:#FF0000;"><strong>*</strong></span> are mandatory.</p>
 </div>
 </div>
 </div>
@@ -82,36 +83,36 @@
 
 <div class="row">
 <div class="col-xs-12 col-md-8 col-md-offset-2 fields">
-<div class="form-group"><label for="Tweet">Tweet <strong><span style="color:ff0000">*</span></strong>:</label><textarea class="form-control" id="tweet" name="tweet" placeholder="Tweet Goes Here" rows="5"></textarea></div>
+<div class="form-group"><label for="Tweet">Tweet <strong><span style="color:ff0000">*</span></strong>:</label><textarea class="form-control" id="tweet" required name="tweet" placeholder="Tweet Goes Here" rows="5"></textarea></div>
 
 <div class="form-inline fieldset clearfix">
 <div><label for="tweet_url_label">Tweet URL <strong><span style="color:ff0000">*</span></strong> :</label>&nbsp;</div>
 
-<div class="form-group col-margin"><label class="sr-only" for="tweet_url">Tweet URL</label> <input class="form-control" id="tweet_url" name="tweet_url" placeholder="Tweet Url Goes Here" type="text" /></div>
+<div class="form-group col-margin"><label class="sr-only" for="tweet_url">Tweet URL</label> <input class="form-control" id="tweet_url" required name="tweet_url" placeholder="Tweet Url Goes Here" type="text" /></div>
 
 <p><strong>Tweet Source Account Name <strong><span style="color:ff0000">*</span></strong>:</strong></p>
 
-<div class="form-group col-margin"><label class="sr-only" for="account_name">Address Line 2:</label> <input class="form-control" id="account_name" name="account_name" placeholder=" Tweet Account Name Goes here" type="text" /></div>
+<div class="form-group col-margin"><label class="sr-only" for="account_name">Address Line 2:</label> <input class="form-control" id="account_name" required name="account_name" placeholder=" Tweet Account Name Goes here" type="text" /></div>
 
 <p><strong>Tweet Source Account URL <strong><span style="color:ff0000">*</span></strong>:&nbsp;</strong></p>
 
-<div class="form-group col-margin"><label class="sr-only" for="account_url">Account URL:</label> <input class="form-control" id="account_url" name="account_url" placeholder="Account URL Goes Here" type="text" /></div>
+<div class="form-group col-margin"><label class="sr-only" for="account_url">Account URL:</label> <input class="form-control" id="account_url" required name="account_url" placeholder="Account URL Goes Here" type="text" /></div>
 
 <p>&nbsp;</p>
 
-<div class="form-group"><label for="interpretation_1">Interpretation-1 <strong><span style="color:ff0000">*</span></strong></label><textarea class="form-control" id="interpretation_1" name="interpretation_1" placeholder="Interpretation 1" rows="5"></textarea></div>
+<div class="form-group"><label for="interpretation_1">Interpretation-1 <strong><span style="color:ff0000">*</span></strong></label><textarea class="form-control" id="interpretation_1" required name="interpretation_1" placeholder="Interpretation 1" required="" rows="5"></textarea></div>
 
 <p><strong>Interpretation-1 Likelihood Score (1-10) <strong><span style="color:ff0000">*</span></strong></strong></p>
 
-<div class="form-group col-margin"><label class="sr-only" for="likely_score_1">Likely Score:</label> <input class="form-control" id="likely_score_1" name="likely_score_1" type="number" /></div>
+<div class="form-group col-margin"><label class="sr-only" for="likely_score_1">Likely Score:</label> <input class="form-control" id="likely_score_1" required name="likely_score_1" type="number" /></div>
 
 <p>&nbsp;</p>
 
-<div class="form-group"><span style="font-weight: 700;">Interpretation-2 <strong><span style="color:ff0000">*</span></strong></span><textarea class="form-control" id="interpretation_2" name="interpretation_2" placeholder="Interpretation 2" rows="5"></textarea></div>
+<div class="form-group"><span style="font-weight: 700;">Interpretation-2 <strong><span style="color:ff0000">*</span></strong></span><textarea class="form-control" id="interpretation_2" required name="interpretation_2" placeholder="Interpretation 2" rows="5"></textarea></div>
 
 <p><strong>Interpretation-2 Likelihood Score (1-10) <strong><span style="color:ff0000">*</span></strong></strong></p>
 
-<div class="form-group col-margin"><label class="sr-only" for="likely_score_2">Likely Score:</label> <input class="form-control" id="likely_score_2" name="likely_score_2" type="number" /></div>
+<div class="form-group col-margin"><label class="sr-only" for="likely_score_2">Likely Score:</label> <input class="form-control" id="likely_score_2" required name="likely_score_2" type="number" /></div>
 
 <p>&nbsp;</p>
 
@@ -127,13 +128,15 @@
 
 <p><strong>Probability 1 <strong><span style="color:ff0000">*</span></strong></strong></p>
 
-<div class="form-group col-margin"><label class="sr-only" for="probability_1">Probability 1:</label> <input class="form-control" id="probability_1" name="probability_1" type="number" /></div>
+<div class="form-group col-margin"><label class="sr-only" for="probability_1">Probability 1:</label> <input class="form-control" id="probability_1" required name="probability_1" type="number" /></div>
 
 <p><strong>Probability 2 <strong><span style="color:ff0000">*</span></strong></strong></p>
 
-<div class="form-group col-margin"><label class="sr-only" for="probability_2">Probability 2:</label> <input class="form-control" id="probability_2" name="probability_2" type="number" /></div>
+<div class="form-group col-margin"><label class="sr-only" for="probability_2">Probability 2:</label> <input class="form-control" id="probability_2" required name="probability_2" type="number" /></div>
 </div>
-</div>
+<script type="text/javascript">
+ $('#mturk_form').parsley();
+</script></div>
 </div>
 </section>
 <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" integrity="sha384-IS73LIqjtYesmURkDE9MXKbXqYA8rvKEp/ghicjem7Vc3mGRdQRptJSz60tvrB6+" rel="stylesheet" />
