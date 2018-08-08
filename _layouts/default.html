@@ -5,21 +5,20 @@
 
     {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrap">
-			<h1>About</h1>
-			<ul>
-				<li>
-					<a class="page-link" href="{{ "/http://ambiguity.ismlab.usf.edu/ap.ww/abtus.html" | prepend: site.baseurl }}">Know about the project and team</a>
-				</li>
-			</ul>
-			<h1>Data</h1>
-			<ul>
-				<li>
-					<a class="page-link" href="{{ "/design.html" | prepend: site.baseurl }}">See our data collection template</a>
-				</li>
-			</ul>
-       </div>
+    <div class="home">
+      <ul class="posts">
+			<li>
+				About
+				<a class="page-link" href="{{ "/http://ambiguity.ismlab.usf.edu/ap.ww/abtus.html" | prepend: site.baseurl }}">Know about the project and team</a>
+			</li>
+			
+			<li>
+				Data
+				<a class="post-link" href="{{ "/design.html" | prepend: site.baseurl }}">See our data collection template</a>
+				<a class="post-link" href="{{ "/data.csv" | prepend: site.baseurl }}">Data we collected</a>
+			</li>
+	
+       </ul>
     </div>
 
     {% include footer.html %}
