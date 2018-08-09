@@ -140,6 +140,8 @@ a:visited { color: #205caa; }
   padding: 30px 0;
   background-image: url("/img/background.jpg");
   background-color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
