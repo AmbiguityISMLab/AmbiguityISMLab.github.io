@@ -31,6 +31,7 @@ a:visited { color: #205caa; }
   max-width: 800px;
   padding: 0 30px;
   margin: 0 auto;
+  margin-left: 40px;
   zoom: 1;
 }
 
